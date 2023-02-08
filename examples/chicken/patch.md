@@ -1,6 +1,6 @@
-# Action ```PATCH```
+# Chicken ```PATCH```
 
-Used to update an action.
+Used to update an chicken.
 
 | Method   | Url           |
 | -------- | ---------------|

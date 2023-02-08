@@ -1,4 +1,4 @@
-# Service ```GET```
+# Chicken ```GET```
 
 Used to get all chickens.
 

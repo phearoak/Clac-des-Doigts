@@ -1,6 +1,6 @@
-# Action ```POST```
+# Chicken ```POST```
 
-Used to create an action.
+Used to create a chicken.
 
 | Method   | Url           |
 | -------- | ---------------|

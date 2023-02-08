@@ -1,4 +1,4 @@
-# Service ```DELETE```
+# Chicken ```DELETE```
 
 Used to delete a chicken.
 

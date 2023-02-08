@@ -45,8 +45,8 @@ stack: [
 | Method   | URL                                           | Description          | Status |
 | -------- | --------------------------------------------- | -------------------- | :----: |
 | `POST`   | [`/chicken`](examples/chicken/post.md)        | Create a chicken     |   ✅   |
-| `POST`   | [`/chicken/run/:id`](examples/chicken/post.md)    | Update steps chicken |   ✅   |
-| `GET`    | [`/chicken/:id`](examples/chicken/getById.md) | Get a chicken        |   ✅   |
-| `GET`    | [`/chicken/`](examples/chicken/get.md)        | Get a chicken        |   ✅   |
+| `POST`   | [`/chicken/run/:id`](examples/chicken/run.md)    | Update steps chicken |   ✅   |
+| `GET`    | [`/chicken/:id`](examples/chicken/getById.md) | Get a single chicken        |   ✅   |
+| `GET`    | [`/chicken/`](examples/chicken/get.md)        | Get all chickens        |   ✅   |
 | `PATCH`  | [`/chicken/:id`](examples/chicken/patch.md)   | Update a chicken     |   ✅   |
 | `DELETE` | [`/chicken/:id`](examples/chicken/delete.md)  | Delete a chicken     |   ✅   |

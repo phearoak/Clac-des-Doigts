@@ -1,4 +1,4 @@
-# Action ```POST```
+# Chicken ```POST```
 
 Used to increment chicken steps.
 
