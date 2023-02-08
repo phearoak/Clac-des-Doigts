@@ -1,0 +1,36 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("MYSQL_URL")
+}
+
+model Chicken {
+  id                Int        @id @default(autoincrement())
+
+  name              String     @db.VarChar(255)
+  steps             Int?       @default(0)
+  weight            Int
+  isRunning         Boolean    @default(false)
+
+  birthday          DateTime  @default(now()) @db.DateTime(0)
+  created_at        DateTime  @default(now()) @db.DateTime(0)
+  updated_at        DateTime  @updatedAt
+
+  @@map("chicken")
+}
+
+model Action {
+  id                  Int         @id @default(autoincrement())
+
+  name                String @unique @db.VarChar(255)
+  description         String @db.VarChar(255)
+
+  created_at          DateTime @default(now()) @db.DateTime(0)
+  updated_at          DateTime @updatedAt
+
+  @@map("action")
+}
