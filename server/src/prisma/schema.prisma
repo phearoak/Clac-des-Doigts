@@ -22,15 +22,3 @@ model Chicken {
 
   @@map("chicken")
 }
-
-model Action {
-  id                  Int         @id @default(autoincrement())
-
-  name                String @unique @db.VarChar(255)
-  description         String @db.VarChar(255)
-
-  created_at          DateTime @default(now()) @db.DateTime(0)
-  updated_at          DateTime @updatedAt
-
-  @@map("action")
-}

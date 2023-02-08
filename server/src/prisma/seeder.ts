@@ -2,16 +2,13 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 async function main() {
-    /**
-     * @description demo User (ADMIN rights) [demo@area.com:demodemo]
-     */
     await prisma.chicken.create({
         data: {
             name: "Paul",
             weight: 5
         },
     });
-    await prisma.chicken.create({ // ACTION ISSUE FIELD : SELECT ACCOUNT
+    await prisma.chicken.create({
         data:
         {
             name: "Chris",
