@@ -1,8 +1,10 @@
 # Chicken run
 
-- [How to Setup](#how-to-setup)
-- [Stack :zap:](#stack-zap)
-- [API Endpoints](#api-endpoints)
+- [Chicken run](#chicken-run)
+  - [How to Setup](#how-to-setup)
+  - [Stack :zap:](#stack-zap)
+  - [API Endpoints](#api-endpoints)
+    - [Chicken](#chicken)
 
 ## How to Setup
 
@@ -27,17 +29,24 @@ $ docker-compose up --detach
 ## Stack :zap:
 
 ```javascript
-stack: ["nodejs", "typescript", "express", "prisma", "mysql"];
+stack: [
+    "nodejs",
+    "typescript",
+    "express",
+    "prisma",
+    "mysql"
+];
 ```
 
 ## API Endpoints
 
 ### <u>Chicken</u>
 
-| Method   | URL                                          | Description          | Status |
-| -------- | -------------------------------------------- | -------------------- | :----: |
-| `POST`   | [`/chicken`](examples/service/post.md)       | Create a chicken     |   ✅   |
-| `POST`   | [`/chicken/run`](examples/service/post.md)   | Update steps chicken |   ✅   |
-| `GET`    | [`/chicken/:id`](examples/service/get.md)    | Get a chicken        |   ✅   |
-| `PATCH`  | [`/chicken/:id`](examples/service/patch.md)  | Update a chicken     |   ✅   |
-| `DELETE` | [`/chicken/:id`](examples/service/delete.md) | Delete a chicken     |   ✅   |
+| Method   | URL                                           | Description          | Status |
+| -------- | --------------------------------------------- | -------------------- | :----: |
+| `POST`   | [`/chicken`](examples/chicken/post.md)        | Create a chicken     |   ✅   |
+| `POST`   | [`/chicken/run/:id`](examples/chicken/post.md)    | Update steps chicken |   ✅   |
+| `GET`    | [`/chicken/:id`](examples/chicken/getById.md) | Get a chicken        |   ✅   |
+| `GET`    | [`/chicken/`](examples/chicken/get.md)        | Get a chicken        |   ✅   |
+| `PATCH`  | [`/chicken/:id`](examples/chicken/patch.md)   | Update a chicken     |   ✅   |
+| `DELETE` | [`/chicken/:id`](examples/chicken/delete.md)  | Delete a chicken     |   ✅   |
